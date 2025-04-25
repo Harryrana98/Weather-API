@@ -23,12 +23,15 @@ body{
 form{
     height: 400px;
     width: 800px;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.7);
 }
-
+  h1{
+    color: white;
+    margin-bottom: 1rem;
+  }
 input{
     padding: 10px 20px;
     font-size: medium;
