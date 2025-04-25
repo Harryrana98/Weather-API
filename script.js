@@ -35,9 +35,12 @@ function displayData(obj) {
         temp.innerText = `Temperature : ${obj.main.temp}  F`;
         const wind = document.createElement("p");
         wind.innerText = `Wind Speed : ${obj.wind.speed} km/h`;
-        const status = document.createElement("p");
-        status.innerText = `Description : ${obj.weather[0].description}`;
-        result.append(cityName, temp, wind, status);
+        const description = document.createElement("p");
+        description.innerText = `Description : ${obj.weather[0].description}`;
+        const status=document.createElement("img")
+        status.src=`https://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`
+
+        result.append(cityName, temp, wind, description,status);
     }else {
         alert(obj.message);
     }
